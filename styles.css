@@ -1,0 +1,62 @@
+.catalogContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.firstHome {
+  width: 400px;
+  height: 350px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.homeImage img {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.container {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btnDetail {
+  padding: 5px 12px;
+  border-radius: 5px;
+  background-color: blue;
+  border: 1px solid blue;
+  color: white;
+  border: none;
+}
+.btnContact {
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+.btnDetail:hover {
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+}
+
+.btnContact:hover {
+  background-color: blue;
+  color: white;
+}
+.homeImage {
+  transition: transfrom;
+  overflow: hidden;
+}
+.homeImage img:hover {
+  transform: scaleX(1.035);
+}
+
+@media screen and (min-width: 320px) and (max-width: 553px) {
+  .catalogContainer {
+    flex-direction: column;
+  }
+}
